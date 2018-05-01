@@ -1,0 +1,34 @@
+Image Recognition
+
+Ýn this project i did some basic image recognition tasks. The image
+dataset i have contains images (in jpeg format) of dimensions 120x128, with the
+training set consisting of 315 images and the test set consisting of 90 images.
+In each image, the subject has the following characteristics:
+? Name – name of the subject
+? Direction Faced – left, right, straight, up
+? Emotion – happy, sad, neutral, angry
+? Eyewear – open, sunglasses
+
+Direction Faced Analysis
+
+Each image has shape of 120x128. Next i flattened each image array to a vector of dimensions
+1x 15360. Then i create y_train_ directionfaced using images’ file names. For instance, if the file name is aaa_right_neutral_eyewear.jpg, then the label of the image is ‘right’. Next i used the following dictionary to encode directions into a numerical format:
+direction_encode = {'right': 0, 'left': 1, 'up': 2, 'straight': 3}
+Part A
+Ý trained a Random Forest Classifier with the training set and checked how long it takes and checked the resulting model on the test set, and after i saved them in a pickle format.
+Part B
+Ý used PCA to reduce the taining dataset dimensionality then trained a new Random Forest classifier on the reduced dataset, checked how long it takes and checked its resulting model on the test set then saved them in a pickle format.
+
+
+Emotion Analysis
+i used the same train and test sets, but used emtions as label, For instance, if the file name is aaa_right_neutral_eyewear.jpg, then the label of the image is ‘neutral’. Created a y_train_emotion and t_test_emotion according to emotion label. And used  the following dictionary to encode emotions into a numerical format:
+emotion_encode = {'neutral': 0, 'happy': 1, 'angry': 2, 'sad': 3}
+
+Part C
+trained a Logistic Regression Classifier on the training dataset, timed it and evaulated the model on the test set. 
+
+Part D
+Ý used PCA to reduce the taining dataset dimensionality then trained a new Logistic Regression Classifier on the reduced dataset, checked how long it takes and checked its resulting model on the test set then saved them in a pickle format.
+
+
+
