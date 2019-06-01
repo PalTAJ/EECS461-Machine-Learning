@@ -1,1 +1,3 @@
 
+
+İt uses USA pollution data from 2000 to 2016, to build an ARIMA (Autoregressive integrated moving average) model that can be utilized to forecast future pollution Rates for specific pollution source in a given area by using some of the data for training. 
