@@ -1,1 +1,6 @@
 
+Traditionally when we are faced with the task of determining whether a given maze has a path or
+not we resort to various search or path finding algorithms which are able to answer this question
+with absolute certainty. In this assignment, however, we will take a different approach to solve this
+problem by building a classifier that determines (to a certain degree) whether a given maze has a
+path or not.
